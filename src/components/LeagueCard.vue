@@ -51,7 +51,8 @@ const handleCardClick = async () => {
             </p>
 
             <span
-              class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+              class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800"
+            >
               {{ league.strSport || 'Sport' }}
             </span>
           </div>
@@ -66,8 +67,12 @@ const handleCardClick = async () => {
       <div class="flip-card-back">
         <Card class="h-full flex flex-col items-center justify-center">
           <div v-if="league.strBadge" class="flex flex-col items-center">
-            <img :src="league.strBadge" :alt="`${league.strLeague} badge`" class="max-w-24 max-h-24 object-contain mb-4"
-              @error="handleImageError" />
+            <img
+              :src="league.strBadge"
+              :alt="`${league.strLeague} badge`"
+              class="max-w-24 max-h-24 object-contain mb-4"
+              @error="handleImageError"
+            />
             <p class="text-sm font-medium text-gray-900 text-center">{{ league.strLeague }}</p>
           </div>
 
