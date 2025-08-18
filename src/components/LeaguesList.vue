@@ -3,7 +3,7 @@ import { useLeaguesStore } from "@/stores/leaguesStore";
 import { onMounted } from "vue";
 import { storeToRefs } from "pinia";
 import EmptyState from "@/components/EmptyState.vue";
-import SkeletonCard from "@/components/SkeletonCard.vue";
+import LeagueCardSkeleton from "@/components/LeagueCardSkeleton.vue";
 import LeagueCard from "@/components/LeagueCard.vue";
 
 const leaguesStore = useLeaguesStore();
@@ -17,7 +17,7 @@ onMounted(() => {
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <template v-if="loading">
-      <SkeletonCard v-for="n in 9" :key="`skeleton-${n}`" />
+      <LeagueCardSkeleton v-for="n in 9" :key="`skeleton-${n}`" />
     </template>
 
     <template v-else>
