@@ -1,11 +1,11 @@
 <script setup lang="ts">
 interface Props {
-  title?: string;
+  title?: string
 }
 
 withDefaults(defineProps<Props>(), {
-  title: 'Application'
-});
+  title: 'Application',
+})
 </script>
 
 <template>

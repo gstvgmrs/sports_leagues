@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { useLeaguesStore } from "@/stores/leaguesStore";
-import { storeToRefs } from "pinia";
-import Dropdown from "@/components/base/Dropdown.vue";
-import SearchInput from "@/components/base/SearchInput.vue";
+import { useLeaguesStore } from '@/stores/leaguesStore'
+import { storeToRefs } from 'pinia'
+import Dropdown from '@/components/base/Dropdown.vue'
+import SearchInput from '@/components/base/SearchInput.vue'
 
-const leaguesStore = useLeaguesStore();
-const { sportOptions } = storeToRefs(leaguesStore);
+const leaguesStore = useLeaguesStore()
+const { sportOptions } = storeToRefs(leaguesStore)
 
 const handleFilterChange = (selectedOption: string) => {
-  leaguesStore.setSportFilter(selectedOption);
-};
+  leaguesStore.setSportFilter(selectedOption)
+}
 
 const handleSearch = (query: string) => {
-  leaguesStore.setSearchQuery(query);
-};
+  leaguesStore.setSearchQuery(query)
+}
 </script>
 
 <template>

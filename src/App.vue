@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Header from "@/components/layout/Header.vue";
-import LeaguesFilters from "@/components/LeaguesFilters.vue";
-import LeaguesList from "@/components/LeaguesList.vue";
+import Header from '@/components/layout/Header.vue'
+import LeaguesFilters from '@/components/LeaguesFilters.vue'
+import LeaguesList from '@/components/LeaguesList.vue'
 </script>
 
 <template>

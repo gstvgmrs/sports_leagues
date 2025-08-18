@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import Icon from "@/components/base/Icon.vue";
+import Icon from '@/components/base/Icon.vue'
 
 interface Props {
-  icon?: 'document' | 'search' | 'close' | 'chevron-down' | 'error' | 'alert';
-  title: string;
-  description: string;
-  iconClass?: string;
+  icon?: 'document' | 'search' | 'close' | 'chevron-down' | 'error' | 'alert'
+  title: string
+  description: string
+  iconClass?: string
 }
 
 withDefaults(defineProps<Props>(), {
   icon: 'document',
-  iconClass: 'mx-auto text-gray-300 mb-4'
-});
+  iconClass: 'mx-auto text-gray-300 mb-4',
+})
 </script>
 
 <template>
