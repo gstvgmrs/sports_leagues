@@ -1,6 +1,6 @@
 # Home Assignment - FE - Sports Leagues
 
-Live preview: https://sportsleagues.vercel.app/
+Live preview: <a href="https://sportsleagues.vercel.app/" target="_blank">https://sportsleagues.vercel.app</a>
 
 ## Features
 
