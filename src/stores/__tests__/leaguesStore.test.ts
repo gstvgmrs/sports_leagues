@@ -222,7 +222,7 @@ describe('LeaguesStore', () => {
       const store = useLeaguesStore()
       store.leagues = [
         { idLeague: '1', strLeague: 'Test League', strSport: 'Soccer' },
-        { idLeague: '2', strLeague: 'Test League 2' }, // no sport
+        { idLeague: '2', strLeague: 'Test League 2' },
       ]
 
       expect(store.sportOptions).toEqual(['All Sports', 'Soccer'])

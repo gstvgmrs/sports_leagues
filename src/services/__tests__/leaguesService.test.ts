@@ -102,7 +102,7 @@ describe('LeaguesService', () => {
       expect(mockedGet).toHaveBeenCalledWith(
         'https://www.thesportsdb.com/api/v1/json/3/search_all_seasons.php?badge=1&id=123',
       )
-      expect(result).toBe('https://example.com/badge2.png') // Last season badge
+      expect(result).toBe('https://example.com/badge2.png')
     })
 
     it('should return null when no seasons available', async () => {

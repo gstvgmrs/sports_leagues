@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BaseCard > should match snapshot 1`] = `
+"<div class="bg-white rounded-lg border border-gray-200 shadow hover:shadow-md transition-shadow duration-200 p-6">
+  <h1>Test Title</h1>
+  <p>Test content</p>
+</div>"
+`;
