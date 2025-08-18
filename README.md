@@ -1,45 +1,84 @@
-# sports-leagues
+# Home Assignment - FE - Sports Leagues
 
-This template should help get you started developing with Vue 3 in Vite.
+Live preview: https://sportsleagues.vercel.app/
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- 🏆 List of sports leagues
+- 🔄 Card flip animation to display league badges
+- 🔍 Search system by league name
+- 🏷️ Filter by sports category
+- 📱 Responsive interface with Tailwind CSS
+- ⚡ Optimized loading with skeleton states
+- 🎯 Proper error and empty states handling
 
-## Type Support for `.vue` Imports in TS
+## Technologies
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **Vue.js 3** with Composition API
+- **TypeScript** for static typing
+- **Tailwind CSS** for styling
+- **Pinia** for state management
+- **Vite** as bundler and dev server
+- **Vitest** for unit testing
+- **Vue Test Utils** for component testing
 
-## Customize configuration
+## AI usage
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+This project was developed with significant assistance from AI (GitHub Copilot with Claude Sonnet 4 Agent), which was instrumental in various aspects of development:
 
-## Project Setup
+### **Project Architecture & Setup**
 
-```sh
+- Initial Vue.js 3 + TypeScript + Vite project configuration
+- Tailwind CSS configuration
+
+### **Auto completetions**
+
+- Code snippets and suggestions for Vue.js components
+- TypeScript type definitions and interfaces generation
+- Tailwind CSS class name suggestions
+- Component composition patterns and props validation
+- Error handling
+
+### **Code generation**
+
+- SVG for Icons and Skeletons
+
+### **Testing Strategy**
+
+#### **Test Scenario Generation & Edge Cases**
+
+- AI suggested comprehensive testing scenarios including empty states, loading states, error conditions, and user interaction patterns
+- Identified edge cases like API failures, missing data, component lifecycle issues, and reactive state changes
+- Generated test cases for complex user flows: card flips with badge fetching, search with filters, dropdown selections
+
+#### **Test Code Generation & Setup**
+
+- Auto-generated test file boilerplate with proper imports, describe blocks, and component mounting utilities
+- Created mock implementations for Pinia stores, API services with spy functions for tracking method calls
+- Provided code snippets for async testing patterns, event simulation, and Vue reactivity handling with `nextTick()`
+
+The AI assistance enabled rapid development while maintaining high code quality, comprehensive testing, and modern development practices throughout the project.
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/gstvgmrs/sports_leagues.git
+cd sports_leagues
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Running the Project
 
-```sh
+To run the project in development mode with hot-reload:
+
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Run All Tests
 
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
+```bash
 npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
