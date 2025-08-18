@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     <template v-if="loading">
       <LeagueCardSkeleton v-for="n in 9" :key="`skeleton-${n}`" />
     </template>
@@ -25,18 +25,10 @@ onMounted(() => {
     </template>
   </div>
 
-  <EmptyState
-    v-if="!loading && error"
-    icon="error"
-    :title="'Failed to load leagues'"
+  <EmptyState v-if="!loading && error" icon="error" :title="'Failed to load leagues'"
     :description="'Something went wrong while fetching the data. Please try again.'"
-    icon-class="mx-auto text-red-400 mb-4"
-  />
+    icon-class="mx-auto text-red-400 mb-4" />
 
-  <EmptyState
-    v-else-if="!loading && !error && filteredLeagues.length === 0"
-    icon="search"
-    :title="'No leagues found'"
-    :description="'Try adjusting your search or filter criteria.'"
-  />
+  <EmptyState v-else-if="!loading && !error && filteredLeagues.length === 0" icon="search" :title="'No leagues found'"
+    :description="'Try adjusting your search or filter criteria.'" />
 </template>
